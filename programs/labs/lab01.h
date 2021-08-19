@@ -58,7 +58,7 @@ int main()
     motor4 = 0;
     wait(2);
 
-    motor4 = 0.07;
+    motor4 = 0.1;
     wait(0.5);
     motor4 = 0;
     wait(0.05);

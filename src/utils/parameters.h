@@ -15,5 +15,7 @@ const float I_zz = 29.0e-6; // kg.m^2
 const float l = 33.0e-3;    // m
 const float a1 = 1.172e-7;  
 const float a2 = 9.879e-14;
+const float kl = 1.726e-8;  // N.s^2
+const float kd = 2.7e-10;   // N.m.s^2
 
 #endif

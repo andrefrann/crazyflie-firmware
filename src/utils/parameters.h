@@ -17,5 +17,7 @@ const float a1 = 1.172e-7;
 const float a2 = 9.879e-14;
 const float kl = 1.726e-8;  // N.s^2
 const float kd = 2.7e-10;   // N.m.s^2
-
+const float wc = 15;        // rad/s
+const float delta_t = 1.0/500.0;// s
+const float alpha = wc*delta_t/(1+wc*delta_t);
 #endif

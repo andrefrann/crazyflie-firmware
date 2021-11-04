@@ -2,8 +2,7 @@
 #define attitude_estimator_h
 
 #include "mbed.h"
-// #include "crazyflie.h"
-#include "drivers/mpu9250.h"
+#include "crazyflie.h"
 
 class AttitudeEstimator
 {
@@ -11,11 +10,12 @@ class AttitudeEstimator
         AttitudeEstimator();
         void init();
         void estimate();
-        float phi, theta, psi, phi_g;
+        float phi, theta, psi;
         float p, q, r;
     
     private:
-    MPU9250 imu;
+        MPU9250 imu;
+        float p_bias, q_bias, r_bias;
 };
 
 #endif

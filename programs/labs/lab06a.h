@@ -5,7 +5,8 @@ Mixer mixer;
 
 int main()
 {
-    mixer.actuate(0.7*m*g,0,0,0);
+    wait(2);
+    mixer.actuate(0.5*m*g,0,0,0);
     wait(5);
     mixer.actuate(0, 0, 0, 0);
 

@@ -29,13 +29,13 @@ int main()
             flag = false;
             att_est.estimate();
         }
-        // if (serial.readable())
-        // {
-        //     command = serial.getc();
-        //     if (command == 'p')
-        //     {
-                serial.printf("%.10f,%f,%f\n", att_est.phi, att_est.theta, att_est.psi);
-        //     }
-        // }
+        if (serial.readable())
+        {
+        command = serial.getc();
+            if (command == 'p')
+            {
+                serial.printf("%f,%f,%f\n", att_est.phi, att_est.theta, att_est.psi);
+            }
+        }
     }
 }

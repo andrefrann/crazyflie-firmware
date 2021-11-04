@@ -7,7 +7,9 @@ class Mixer
 {
     public:
         Mixer();
+        void arm();
         void actuate(float f_t, float tau_phi, float tau_theta, float tau_psi);
+        void disarm();
     private:
         PwmOut motor_1, motor_2, motor_3, motor_4;
         float omega_1, omega_2, omega_3, omega_4;
